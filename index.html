@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+<head><meta name="robots" content="noindex,nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ФорсункиПро | Поиск форсунок и запрос для СТО</title>
+  <meta name="description" content="Концепт первых двух блоков главной страницы ФорсункиПро.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="https://forsunkipro.ru/" aria-label="ФорсункиПро, действующий сайт">
+        <img src="assets/logo.png" alt="ФорсункиПро" width="290" height="49">
+      </a>
+      <nav class="main-nav" aria-label="Основное меню">
+        <a href="https://forsunkipro.ru/catalog/">Каталог</a>
+        <a href="https://forsunkipro.ru/company/usloviya-sotrudnichestva/">Условия сотрудничества</a>
+        <a href="https://forsunkipro.ru/company/delivery/">Доставка</a>
+        <a href="https://forsunkipro.ru/company/contacts/">Контакты</a>
+      </nav>
+      <a class="header-phone" href="tel:+78002502743">8 800 250-27-43</a>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильное меню" hidden>
+      <a href="https://forsunkipro.ru/catalog/">Каталог</a>
+      <a href="https://forsunkipro.ru/company/usloviya-sotrudnichestva/">Условия сотрудничества</a>
+      <a href="https://forsunkipro.ru/company/delivery/">Доставка</a>
+      <a href="https://forsunkipro.ru/company/contacts/">Контакты</a>
+      <a href="tel:+78002502743">8 800 250-27-43</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="hero-copy-inner">
+          <p class="section-kicker">Топливная аппаратура и комплектующие</p>
+          <h1 id="hero-title">Найдите форсунку <br>по её номеру</h1>
+          <p class="hero-description">Форсунки, ТНВД и запчасти для ремонта. Введите маркировку детали и перейдите к товарам в действующем каталоге.</p>
+          <form class="search-form" action="https://forsunkipro.ru/catalog/" method="get" role="search">
+            <label for="part-number">Номер форсунки или артикул</label>
+            <div class="search-row">
+              <input id="part-number" name="q" type="search" placeholder="Например, 0445120057" autocomplete="off" required>
+              <button type="submit">Найти в каталоге</button>
+            </div>
+          </form>
+          <a class="help-link" href="https://forsunkipro.ru/company/articles/markirovka_dizelnykh_forsunok_gde_nayti_nomer_i_kak_ego_rasshifrovat/">Где найти номер на форсунке</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Фотографии форсунок из каталога ФорсункиПро">
+        <div class="visual-topline">Реальные детали из каталога</div>
+        <figure class="product-photo main-photo">
+          <img src="assets/injector-denso-large.jpg" alt="Топливная форсунка Denso из каталога ФорсункиПро">
+        </figure>
+        <figure class="product-photo small-photo left-photo">
+          <img src="assets/injector-iveco-large.jpg" alt="Форсунка для IVECO и CASE NEW HOLLAND из каталога ФорсункиПро">
+        </figure>
+        <figure class="product-photo small-photo right-photo">
+          <img src="assets/injector-cummins-large.jpg" alt="Форсунка Cummins из каталога ФорсункиПро">
+        </figure>
+        <a class="visual-catalog" href="https://forsunkipro.ru/catalog/forsunki_common_rail_i_mekhanicheskie/">Все форсунки в каталоге</a>
+      </div>
+    </section>
+
+    <section class="trade shell" aria-labelledby="trade-title">
+      <div class="trade-heading">
+        <p class="section-kicker">Для СТО и дизельных центров</p>
+        <h2 id="trade-title">Закупаете запчасти<br>для работы с клиентами?</h2>
+        <p>Соберите номера нужных деталей в одном запросе. Команда ФорсункиПро уточнит наличие и рассчитает условия закупки.</p>
+      </div>
+      <div class="trade-panel">
+        <div class="trade-info">
+          <h3>Один запрос по вашим позициям</h3>
+          <p>Форсунки, распылители, детали для ремонта и ТНВД. Укажите артикулы и количество, чтобы обсудить поставку для сервиса.</p>
+          <div class="trade-links">
+            <a href="https://forsunkipro.ru/catalog/">Открыть каталог</a>
+            <a href="https://forsunkipro.ru/company/usloviya-sotrudnichestva/">Условия сотрудничества</a>
+          </div>
+          <div class="trade-fact">Оптовые цены и остатки на складах доступны после регистрации на действующем сайте.</div>
+        </div>
+        <div class="request-card">
+          <h3>Запросить наличие<br>и оптовый расчёт</h3>
+          <p>Перечислите номера деталей и нужное количество. По кнопке откроется письмо в ФорсункиПро с вашим запросом.</p>
+          <form id="trade-request">
+            <label for="request-details">Артикулы и количество</label>
+            <textarea id="request-details" name="details" rows="4" placeholder="Например: 0445120057, 4 шт." required></textarea>
+            <button type="submit">Открыть письмо с запросом</button>
+          </form>
+          <p class="form-note">Письмо откроется в вашей почтовой программе. Отправка остаётся за вами.</p>
+          <a class="contact-line" href="tel:+78002502743">Или позвоните: 8 800 250-27-43</a>
+        </div>
+      </div>
+      <div class="trade-bottom">
+        <span>Доставка по России и самовывоз в Москве, ул. Байкальская, 5с1</span>
+        <a href="https://forsunkipro.ru/personal/profile/?register=yes">Зарегистрироваться для оптовых цен</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
